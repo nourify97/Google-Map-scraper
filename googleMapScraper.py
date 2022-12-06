@@ -15,13 +15,15 @@ from urllib.parse import urlparse
 import csv
 import time
 
-big_usa_cities = ['New York', 'Los Angeles']
-
+# To edit 
 pages = 2
-search_for = 'Doctor in'
+cities = ['Milano', 'Torino']
+search_for = 'Dottore a'
+
+
 google_url = 'https://www.google.com'
 
-for city in big_usa_cities:
+for city in cities:
     search_term = search_for
     output_filename = search_term.replace(" ", "_")
     header = ["title", "website"]
